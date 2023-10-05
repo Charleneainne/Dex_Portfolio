@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dex Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="icon" href="./assets/d.png" type="image/x-icon">
+</head>
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">Raimon Dexter Vinluan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Raimon Dexter Vinluan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic.png" alt=" Dex Profile Pic">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1"> Hello, I'm</p>
+            <h1 class="title"> Raimon Dexter</h1>
+            <p class="section-text-p2"> DATA SCIENTIST</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2"
+                onclick="window.open ('./assets/Resume_Raimon_Dexter_Vinluan.pdf')">
+                See Resume
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                     alt="My LinkedIn account"
+                     class="icon" 
+                     onclick="openLink('https://www.linkedin.com/in/raimon-dexter-vinluan-9b56bb239/')">
+                <img src="./assets/datacamp.png" 
+                     alt="My Datacamp account"
+                     class="icon"
+                     onclick="openLink('https://www.datacamp.com/portfolio/raimondextervinluan')">
+                <img src="./assets/medium.png" 
+                     alt="My medium account"
+                     class="icon" 
+                     onclick="openLink('https://medium.com/@Pyper.ipynb')">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="about_p"> Get to know me more</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img src="./assets/about_me.JPG" 
+                alt="About Pic"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br/> Data Science</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p> Bachelors Degree 
+                            <br/> Computer Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        👋 Hi! I'm Dex, a Data Scientist Associate and a Computer Engineer.
+                        <br>
+                        🔎 I have experience on doing data validation, visualization, and analysis based on my latest internship. 
+                        <br> I am interested in the data field and my goal is to study and gain experience on data analysis, data science, and machine learning.    
+                        <br> ⚒️ The tech tools that I am comfortable to use are Python, MS Excel, MS Power BI, and Google Sheets but I am looking forward to learn SQL and other data engineering tools to further my skillset. 
+                        <br> For productivity tools, I am a fan of Notion, ChatGPT, and Bard, and I am currently exploring them deeper.
+                        <br> 📋 Occasionally, I write articles at Medium and Hashnode where I talk about data science topics and automation. 
+                        <br> I also want to write more about Notion, ChatGPT, and other AI tools.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="./assets/arrow.png" 
+        alt="arrow"
+        class="arrow icon"
+        onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="about_p"> What I offer</p>
+        <h1 class="title"> Skills and Tools</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Data Science and Data Analysis</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Data Cleaning</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Exploratory Data Analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Data Wrangling</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Visualization</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Descriptive Analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Machine Learning</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title"> Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>Google Sheets</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>MS Power BI</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>MS Excel</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                            src="./assets/checkmark.png" 
+                            alt="Experience Icon"
+                            class="icon">
+                            <div>
+                                <h3>MatplotLib</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <p class="about_p"> Browse my</p>
+        <h1 class="title"> Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Project_1.jpg" 
+                    alt="Proj 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> AN ANALYSIS AND PREDICTION OF EMO’S FIRST ELECTRIC MOPED OWNERSHIP
+                </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="window.open ('./assets/Moped-Ownership-Prediction.pdf')">
+                    See More
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Project_2.jpg" 
+                    alt="Proj 2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">  MICROBES NOTEBOOK: IDENTIFYING ULOTHRIX</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                    onclick="openLink ('https://www.kaggle.com/code/raimondextervinluan/microbes-notebook-identifying-ulothrix-detailed')">
+                    See More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="articles">
+        <p class="about_p"> Read my</p>
+        <h1 class="title"> Articles</h1>
+        <div class="experience-details-container">
+            <div class="centered-article-box">
+            <div class="article-box color-container"
+            onclick="openLink('https://medium.com/@Pyper.ipynb/know-thy-datai-1-data-ethics-and-ai-ethics-61ab94aa7643')">
+                <div class="article-container">
+                    <img 
+                    src="./assets/Data Ethics and AI Ethics.webp" 
+                    alt="Proj 1"
+                    class="article-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> Data Ethics and AI Ethics
+                </h2>
+                <div class="btn-container">
+                </div>
+            </div>
+            <div class="article-box color-container"
+            onclick="openLink('https://medium.com/@Pyper.ipynb/know-thy-datai-0-a0777ffe9480')">
+                <div class="article-container">
+                    <img 
+                    src="./assets/KnowThyAI.webp" 
+                    alt="Proj 2"
+                    class="article-img">
+                </div>
+                <h2 class="experience-sub-title project-title"> Know Thy DatAI #0
+                </h2>
+                <div class="btn-container">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-text-p1"> Get in Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                
+                <img 
+                src="assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon"
+                onclick="openLink('raimondextervinluan@gmail.com')"
+                />
+                 <p>raimondextervinluan@gmail.com</p>
+            </div>
+
+            <div class="contact-info-container">
+                <img 
+                src="assets/linkedin.png" 
+                alt="Linkedin Icon"
+                class="icon contact-icon"
+                onclick="openLink('https://www.linkedin.com/in/raimon-dexter-vinluan-9b56bb239/')"
+                />
+                <p> Raimon Dexter Vinluan</p>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <div class="contact-forms">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span class="msg" id="msg"></span>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#articles">Articles</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Raimon Dexter</p>
+    </footer>
+  <script src="script.js"></script>  
+</body>
+</html>
