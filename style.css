@@ -269,7 +269,7 @@ section{
 }
 
 .about-container{
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -309,8 +309,8 @@ section{
 }
 
 .section_pic-container{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
 }
 
